@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a0a;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1rem;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  z-index: 1;
+}
+
+input {
+  max-width: 30vw;
+  border: 1px solid gray;
+  padding: 0.8rem;
+}
+
+#albumCover img {
+  width: 250px;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  z-index: 1;
+}
+
+#app::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    --backdrop: invert(0.2) contrast(0.8) saturate(1.7) blur(8px);
+    --webkit-backdrop-filter: var(--backdrop);
+    backdrop-filter: var(--backdrop);
+}
+
