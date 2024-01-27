@@ -57,7 +57,7 @@ input {
     content: "";
     position: absolute;
     inset: 0;
-    --backdrop: invert(0.2) contrast(0.8) saturate(1.7) blur(8px);
+    --backdrop: invert(0.2) contrast(0.8) saturate(8) blur(8px);
     --webkit-backdrop-filter: var(--backdrop);
     backdrop-filter: var(--backdrop);
 }
